@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="assets/style-r.css">
-    <title></title>
-  </head>
-  <body>
-    <div class="container-fluid">
+<head>
+  <meta charset="utf-8">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="assets/style-r.css">
+  <title></title>
+</head>
+<body>
+  <div class="container-fluid">
 
     <div id="login" class="jumbotron">
+
       <h2 class="text-center">Sign up</h2>
       <hr style="border-color: #3999DC; border-width: 3px" />
+
       <form action="/register" method="POST">
+
         <input type="text" placeholder="Username" name="username" class="form-control" id="username" />
         <input type="text" placeholder="Firstname" name="firstname" class="form-control" id="username" />
         <input type="text" placeholder="Lastname" name="lastname" class="form-control" id="username" />
@@ -20,10 +23,11 @@
         <input type="password" placeholder="Password" name="password1" class="form-control" id="password" />
         <input type="password" placeholder="Repeat Password" name="password2" class="form-control" id="password" />
         <select name="gender">
-  <option value="male">Male</option>
-  <option value="female">Female</option>
-</select>
-        <input type="submit" value="Log in" class="btn" id="submit" />
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input type="submit" value="Sign in" class="btn" id="submit" />
+
       </form>
     </div>
     <div class="jumbotron" id="sign-up">
@@ -33,5 +37,5 @@
     </div>
 
   </div>
-  </body>
+</body>
 </html>

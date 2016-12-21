@@ -1,0 +1,24 @@
+body {
+  background: #3999DC;
+   color: #3999DC;
+}
+
+#login {
+  background: #B4D6EE;
+  margin: 40px auto;
+  width: 95%;
+  display: block;
+}
+
+#username,
+#password,
+#submit {
+  margin: 10px auto;
+  display:block;
+}
+
+#sign-up {
+  background: #B4D6EE;
+  margin:auto;
+  width: 95%;
+}

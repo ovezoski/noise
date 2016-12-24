@@ -5,6 +5,23 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="assets/style-r.css">
   <title></title>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '754454848063729',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </head>
 <body>
   <div class="container-fluid">
@@ -12,7 +29,7 @@
     <div id="login" class="jumbotron">
 
       <h2 class="text-center">Sign up</h2>
-      <hr style="border-color: #3999DC; border-width: 3px" />
+      <hr style="border-color: #DE1B1B; border-width: 3px" />
 
       <form action="/register" method="POST">
 
@@ -27,7 +44,7 @@
           <option value="female">Female</option>
         </select>
         <input type="submit" value="Sign in" class="btn" id="submit" />
-
+        <button onClick="FB.login()" class="btn btn-primary">Sign up with facebook</button>
       </form>
     </div>
     <div class="jumbotron" id="sign-up">

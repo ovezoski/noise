@@ -33,8 +33,17 @@ app.get("/login", function(req, res){
   res.render("login");
 });
 app.post("/login",urlencodedParser , function(req, res){
-  console.log(req.body);
-  res.render("login-success", {data: req.body});
+
+  ship.find({username: req.body.username}, function(err, data){
+if (err) throw err;
+console.log(data[0].password);
+    if(data[0].password==req.body.password){
+            res.render("login-success", {data: data});
+            console.log("success");
+    }else{
+        res.render("login-fail", {data: data, fail: "fail"});
+    }
+  });
 });
 
 

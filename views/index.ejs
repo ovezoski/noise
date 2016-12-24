@@ -1,31 +1,103 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-        <link rel="stylesheet" href="assets/stylem.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <title></title>
+</head>
+<body>
 
-    <div id="menu">
-      <div class="well" id="search">
+  <div id="header" class="row">
 
-        <input type="text" />
-        <i class="fa fa-search"></i>
-
-      </div>
-
-
-      <a href="/login">
-        <button class="btn">Log in</button>
+    <div class="col-xs-4">
+      <a href="#games">
+        <a href="/login">
+          <div class="header-btn btn">
+            Log in
+          </div>
+        </a>
       </a>
+    </div>
+
+    <div class="col-xs-4 text-center" id="logo">BAGi</div>
+
+    <div class="col-xs-4">
       <a href="/register">
-        <button class="btn">Sign up</button>
+        <div class="header-btn btn">
+          Sign up
+        </div>
       </a>
+    </div>
 
+  </div>
+
+
+  <div id="profile">
+    <h2 class="text-center">Profile <i class="fa fa-user"></i></h2>
+    <div id="profile-name" class="well text-center">Blagoja Ovezoski</div>
+    <div id="level" class="well text-center">28</div>  
+  </div>
+
+  <div id="stats">
+    <h3 class="text-center">Adjust level</h3>
+    <input type="range" name="range" id="range">
+    <input type="color" name="color" id="color">
+
+
+  </div>
+
+  <div id="games">
+
+    <h1 class="text-center">
+      Coolest games on earth
+      <i class="fa fa-gamepad"></i>
+    </h1>
+
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <img class="game-photo thumbnail" src="game.jpg" />
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
 
     </div>
 
-  </body>
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+
+  </div>
+
+  <div id="footer" class="text-center">
+
+    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-google"></i>
+    <i class="fa fa-dribbble" aria-hidden="true"></i>
+
+    <h4>Blagoja Ovezoski © 2016 All Rights Reserved</h4>
+
+  </div>
+
+</body>
 </html>

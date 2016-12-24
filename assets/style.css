@@ -1,24 +1,114 @@
-body {
-  background: #3999DC;
-   color: #3999DC;
-}
+body{
+  background-color: #2B2B2B;
 
-#login {
-  background: #B4D6EE;
-  margin: 40px auto;
-  width: 95%;
-  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
+#header{
+  background-color: #F6F6F6;
 
-#username,
-#password,
-#submit {
-  margin: 10px auto;
+}
+#logo{
+  color: #DE1B1B;
+  font-family: 'Monoton', cursive;
+  font-size: 40px;
+}
+.header-btn{
+background-color: #DE1B1B;
+  color:white;
+  width:70%;
   display:block;
+  margin: 10px auto;
+  font-size: 10px;
+}
+a{
+  color: inherit;
 }
 
-#sign-up {
-  background: #B4D6EE;
-  margin:auto;
-  width: 95%;
+#profile{
+  background-color: #F6F6F6;
+  width:98%;
+  height: 300px;
+  margin:1%;
+
+}
+
+#stats{
+  background-color: #F6F6F6;
+  width:98%;
+  height: 300px;
+  margin: 1%;
+  margin-left: 1%;
+}
+
+#range, #color{
+	width:90%;
+	margin: 5%;
+}
+
+#games{
+  display: block;
+  float: left;
+  background-color: #F6F6F6;
+  width:98%;
+  height: 800px;
+  margin:0 1%;
+}
+
+#footer{
+  display: block;
+  float: left;
+  width:98%;
+  height: 100px;
+  margin:0 1%;
+  color: white;
+}
+
+#footer i{
+
+  font-size: 50px;
+  margin:3%;
+}
+.game{
+width: 48%;
+margin:1% ;
+float:left;
+padding: 3px;
+height: 270px;
+
+}
+.game-photo{
+	width: 98%;
+	height: 50px;
+	margin: auto;
+
+}
+#note{
+  background-color: #E9E581;
+}
+@media only screen and (min-width: 600px) {
+  .header-btn{
+  font-size:16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+
+  #profile{
+    display: inline-block;
+    width:40%;
+    float: left;
+  }
+  #stats{
+    display: inline-block;
+    width: 57%;
+    float: left;
+    margin-left: 0%;
+  }
+  .game{
+width: 31%;
+float: left;
+
+}
+#footer i{
+	font-size: 100px;
 }

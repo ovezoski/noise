@@ -2,10 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8">
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="assets/style.css">
     <title></title>
   </head>
   <body>
-    <h1>Login successfull for name: <%= data.username %></h1>
+    <div id="header" class="row">
+
+    <div class="col-xs-4">
+      <a href="#games">
+        <a href="/login">
+          <div class="header-btn btn">
+            Log in
+          </div>
+        </a>
+      </a>
+    </div>
+
+    <div class="col-xs-4 text-center" id="logo">BAGi</div>
+
+    <div class="col-xs-4">
+      <a href="/register">
+        <div class="header-btn btn">
+          Sign up
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div id="profile">
+    <h2 class="text-center">Profile <i class="fa fa-user"></i></h2>
+    <div id="profile-name" class="well text-center"><%= data[0].firstname %>  <%= data[0].lastname %></div>
+    <div id="level" class="well text-center">28</div>
+
+
+  </div>
+
+  <div id="stats">
+    <h3 class="text-center">Adjust level</h3>
+    <input type="range" name="range" id="range">
+    <input type="color" name="color" id="color">
+
+
+  </div>
+
+  <div id="games">
+
+    <h1 class="text-center">
+    Coolest games on earth
+     <i class="fa fa-gamepad"></i>
+    </h1>
+
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <img class="game-photo thumbnail" src="game.jpg" />
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+    <div class="game well">
+
+      <h1 class="name text-center">A cool game</h1>
+      <div class="descrption "> A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met. A lorem ipsum dolom sit a met.</div>
+
+    </div>
+
+
+  </div>
+
+  <div id="footer" class="text-center">
+
+    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-google"></i>
+    <i class="fa fa-dribbble" aria-hidden="true"></i>
+
+    <h4>Blagoja Ovezoski © 2016 All Rights Reserved</h4>
+
+  </div>
   </body>
 </html>

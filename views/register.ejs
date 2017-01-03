@@ -4,24 +4,8 @@
   <meta charset="utf-8">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="assets/style-r.css">
-  <title></title>
-  <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '754454848063729',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-  };
+  <title>Register</title>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 </head>
 <body>
   <div class="container-fluid">
@@ -43,16 +27,16 @@
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-        <input type="submit" value="Sign in" class="btn" id="submit" />
+<input type="submit" name="" value="Register">
         <button onClick="FB.login()" class="btn btn-primary">Sign up with facebook</button>
-      </form>
-    </div>
-    <div class="jumbotron" id="sign-up">
+    </form>
+  </div>
+  <div class="jumbotron" id="sign-up">
 
-      <h4 class="text-center">Already have an account? Log in <a href="">here.</a></h4>
-
-    </div>
+    <h4 class="text-center">Already have an account? Log in <a href="/login">here.</a></h4>
 
   </div>
+
+</div>
 </body>
 </html>

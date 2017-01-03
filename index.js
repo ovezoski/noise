@@ -41,4 +41,4 @@ app.get("/active", require("./routs/activeGet.js"));
 app.get("/profile/:user", require("./routs/profileGet.js"));
 
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT);
